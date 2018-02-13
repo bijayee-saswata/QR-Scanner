@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.scanner.MainActivity">
+    tools:context="com.example.bg.qrscanner.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
 
 
+    <Button
+        android:id="@+id/scanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCAN"
 
-</android.support.constraint.ConstraintLayout>
+        />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor=" #078641"
+            android:text="@string/txtDefault"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/scanBtn" />
+
+
+</LinearLayout>
